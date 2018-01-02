@@ -2,9 +2,186 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport" content="width = device_width, initial-scale=1">
+  <title>Bootstrap Tutorial</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    /*.jumbotron {*/
+      /*background-color: #2B2D88;*/
+      /*color: white;*/
+    /*}*/
+    #container-demo {
+      border: 1px solid black;
+    }
+    #container-fluid-demo {
+      border: 1px solid green;
+    }
+  </style>
 </head>
 <body>
-$END$
+  <h1>container vs container-fluid :</h1>
+  <p>1、container 会根据屏幕大小不同设置 width，而contain-fluid只有一个固定的width，两者的margin都是auto</p>
+  <div class="container" id="container-demo">container</div>
+  <div class="container-fluid" id="container-fluid-demo">container-fluid</div>
+  <h1>page-header</h1>
+  <div class="container">
+    <div class="page-header">This is the page header</div>
+  </div>
+  <div class="container-fluid">
+    <div class="page-header">This is the page header</div>
+  </div>
+
+  <div class="container-fluid">
+    <h1>"well" vs "well-sm" vs "well-lg"</h1>
+    <div class="row">
+      <div class="col-sm-6 well">
+        well
+      </div>
+      <div class="col-sm-6 well well-sm">
+        well-sm
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-sm-6 well">
+        well
+      </div>
+      <div class="col-sm-6 well well-lg">
+        well-bg
+      </div>
+    </div>
+
+    <h1>jumbotron</h1>
+    <div class="jumbotron">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci, consectetur corporis dolor dolores et excepturi exercitationem fugiat harum impedit itaque, iure iusto laudantium magni maiores neque odit quisquam totam.</p>
+    </div>
+    <h1>buttons</h1>
+    <button>no bootstrap style</button>
+    <a href="#" class="btn btn-default">default</a>
+    <button class="btn btn-danger btn">danger</button>
+    <input type="button" class="btn-info" value="info">
+    <button class="btn btn-warning">warning</button>
+    <button class="btn btn-success">success</button>
+    <button class="btn btn-primary">primary</button>
+
+    <button class="btn btn-xs">xs</button>
+    <button class="btn btn-sm">sm</button>
+    <button class="btn btn-md">md</button>
+    <button class="btn btn-lg">lg</button>
+
+    <button class="btn btn-primary" disabled="disabled">disabled</button>
+    <h1>button group</h1>
+    <div class="btn-group btn-group-lg">
+      <button class="btn btn-lg">large</button>
+      <button class="btn btn-md">medium</button>
+      <button class="btn btn-sm">small</button>
+    </div>
+
+    <h1>grid</h1>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">Column 1
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque commodi cupiditate deserunt dolor doloribus esse, fugiat libero magni molestias, nisi nulla praesentium repellendus saepe sapiente similique voluptates! Atque, iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dignissimos necessitatibus perferendis praesentium quod quos temporibus. Consequuntur expedita illum iusto, laboriosam molestias soluta sunt. Doloremque ducimus explicabo itaque magnam nam?</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">Column 2
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque commodi cupiditate deserunt dolor doloribus esse, fugiat libero magni molestias, nisi nulla praesentium repellendus saepe sapiente similique voluptates! Atque, iure? </p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">Column 3
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque commodi cupiditate deserunt dolor doloribus esse, fugiat libero magni molestias, nisi nulla praesentium repellendus saepe sapiente similique voluptates! Atque, iure? </p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">Column 4
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque commodi cupiditate deserunt dolor doloribus esse, fugiat libero magni molestias, nisi nulla praesentium repellendus saepe sapiente similique voluptates! Atque, iure? </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h1>grid</h1>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">Column 1
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque commodi cupiditate deserunt dolor doloribus esse, fugiat libero magni molestias, nisi nulla praesentium repellendus saepe sapiente similique voluptates! Atque, iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dignissimos necessitatibus perferendis praesentium quod quos temporibus. Consequuntur expedita illum iusto, laboriosam molestias soluta sunt. Doloremque ducimus explicabo itaque magnam nam?</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">Column 2
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque commodi cupiditate deserunt dolor doloribus esse, fugiat libero magni molestias, nisi nulla praesentium repellendus saepe sapiente similique voluptates! Atque, iure? </p>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">Column 3
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque commodi cupiditate deserunt dolor doloribus esse, fugiat libero magni molestias, nisi nulla praesentium repellendus saepe sapiente similique voluptates! Atque, iure? </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">Column 4
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque commodi cupiditate deserunt dolor doloribus esse, fugiat libero magni molestias, nisi nulla praesentium repellendus saepe sapiente similique voluptates! Atque, iure? </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <h1>collapse</h1>
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12" >
+        <a href="#col1Content" data-toggle="collapse">Column1</a>
+        <div class="collapse in" id="col1Content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate dignissimos eos expedita magni necessitatibus, pariatur sapiente ut velit! At delectus, eos facilis nulla odio optio quasi saepe tempore ullam!</p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12" >
+        <a href="#col2Content" data-toggle="collapse">Column1</a>
+        <div class="collapse" id="col2Content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate dignissimos eos expedita magni necessitatibus, pariatur sapiente ut velit! At delectus, eos facilis nulla odio optio quasi saepe tempore ullam!</p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12" >
+        <a href="#col3Content" data-toggle="collapse">Column1</a>
+        <div class="collapse" id="col3Content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate dignissimos eos expedita magni necessitatibus, pariatur sapiente ut velit! At delectus, eos facilis nulla odio optio quasi saepe tempore ullam!</p>
+        </div>
+      </div>
+    </div>
+
+    <h1>hidden</h1>
+    <div class="well hidden-sm hidden-md hidden-lg">Screen Size &lt; 768px
+    </div>
+    <div class="well hidden-xs hidden-md hidden-lg">Screen Size &lt;&nbsp;992px && &gt;&nbsp;768
+    </div>
+    <div class="well  hidden-xs hidden-sm hidden-lg">Screen Size &lt;&nbsp;1200px && &gt; 992px
+    </div>
+    <div class="well hidden-xs hidden-sm hidden-md">Screen Size &gt;&nbsp;1200px
+    </div>
+
+    <h1>table</h1>
+    <table class="table table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+          <th colspan="4"><h3>Best Basketball Players</h3></th>
+        </tr>
+        <tr>
+          <th class="col-sm-2"></th>
+          <th class="text-center">3 points</th>
+          <th class="text-center">2 points</th>
+          <th class="text-center">Rebounds</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Stphens.Curry</th>
+          <td>3</td>
+          <td>10</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th>James.Hardin</th>
+          <td>2</td>
+          <td>12</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <th>Lebrown.James</th>
+          <td>3</td>
+          <td>14</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+<script src="bower_components/jquery/dist/jquery.slim.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
